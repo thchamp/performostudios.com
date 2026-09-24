@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Performo Studios | Video for TikTok og Instagram i Oslo</title>
+<meta name="description" content="Performo Studios lager TikTok- og Instagram-videoer for bedrifter i Oslo. Faste månedlige pakker, filmet hos dere og klart til publisering.">
+<meta property="og:title" content="Performo Studios | Video for TikTok og Instagram i Oslo">
+<meta property="og:description" content="Fast videoinnhold for sosiale medier, filmet hos dere og klart til publisering.">
+<meta property="og:image" content="images/performo-logo.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0d0d0e">
+<link rel="icon" href="images/performo-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Performo Studios",
+  "url": "https://performostudios.com",
+  "email": "performostudios@gmail.com",
+  "telephone": "+4794830055",
+  "address": { "@type": "PostalAddress", "addressLocality": "Oslo", "addressCountry": "NO" },
+  "areaServed": "Oslo",
+  "sameAs": ["https://www.instagram.com/performostudios/", "https://www.tiktok.com/@performostudios"]
+}
+</script>
+<style>
+:root{
+  --bg:#0d0d0e; --bg2:#111113; --card:#161618; --line:#232326; --line2:#36363b;
+  --text:#f4f1ea; --muted:#c9c5bc; --muted2:#a8a49b; --red:#de2220; --red-hover:#c21c1a;
+  --paper:#f4f1ea; --ink:#141413;
+  --display:'Bricolage Grotesque', Georgia, serif;
+  --body:'Instrument Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --pad:clamp(20px, 5.5vw, 80px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:90px}
+body{margin:0; background:var(--bg); color:var(--text); font-family:var(--body); font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased}
+img,video{max-width:100%; display:block}
+a{color:var(--text)}
+a:hover{color:#ff5a52}
+:focus-visible{outline:2px solid var(--red); outline-offset:3px; border-radius:4px}
+h1,h2,h3{font-family:var(--display); margin:0}
+p{margin:0}
+
+.btn{display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:14px 28px; border-radius:999px; font-weight:600; font-size:17px; text-decoration:none; border:1px solid transparent; cursor:pointer; font-family:inherit; transition:background .2s}
+.btn-red{background:var(--red); color:#fff}
+.btn-red:hover{background:var(--red-hover); color:#fff}
+.btn-ghost{border-color:#45454a; color:var(--text)}
+.btn-ghost:hover{border-color:var(--text); color:var(--text)}
+.btn-dark{background:var(--ink); color:var(--paper)}
+.btn-dark:hover{background:#2a2a28; color:var(--paper)}
+.eyebrow{font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted2)}
+
+/* Nav */
+.nav{position:sticky; top:0; z-index:10; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:18px var(--pad); padding-top:calc(18px + env(safe-area-inset-top,0px)); background:rgba(13,13,14,.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
+.nav img{height:40px; width:auto}
+.nav-links{display:flex; align-items:center; gap:36px}
+.nav-links a:not(.btn){text-decoration:none}
+@media (max-width:760px){ .nav-links a:not(.btn){display:none} .nav img{height:32px} .nav .btn{padding:10px 18px; min-height:44px; font-size:15px} }
+
+/* Hero */
+.hero{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; padding:96px var(--pad) 104px}
+.hero-text{display:flex; flex-direction:column; gap:28px}
+.hero h1{font-weight:800; font-size:clamp(48px, 6.4vw, 88px); line-height:.98; letter-spacing:-.03em}
+.hero h1 span{color:var(--red)}
+.hero p{font-size:clamp(18px, 1.6vw, 20px); color:var(--muted); max-width:520px}
+.hero-ctas{display:flex; flex-wrap:wrap; gap:14px; padding-top:6px}
+.reels{display:flex; gap:18px; justify-content:flex-end; align-items:flex-end}
+.reel{position:relative; flex:0 1 200px; aspect-ratio:9/16; border-radius:20px; overflow:hidden; background:var(--card); border:1px solid #2a2a2e}
+.reel.big{flex-basis:230px}
+.reel video{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
+.reel .ph{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-align:center; padding:16px; font-size:14px; color:#8f8b83}
+@media (max-width:960px){ .hero{grid-template-columns:1fr; gap:48px; padding-top:56px; padding-bottom:72px} .reels{justify-content:center} }
+@media (max-width:480px){ .reels{gap:10px} .reel{border-radius:14px} }
+
+/* Partners marquee */
+.partners{display:flex; flex-direction:column; gap:32px; padding:52px 0 60px; background:var(--bg2); border-block:1px solid var(--line)}
+.partners .eyebrow{text-align:center}
+.marquee{overflow:hidden; -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent); mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.track{display:flex; align-items:center; width:max-content; animation:scroll 36s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.logo{display:flex; align-items:center; padding:0 56px; opacity:.55; filter:grayscale(1); transition:opacity .3s, filter .3s}
+.logo:hover{opacity:1; filter:none}
+.logo img{width:auto}
+.l-bd{height:72px} .l-sa{height:24px} .l-sm{height:64px}
+@keyframes scroll{from{transform:translateX(0)} to{transform:translateX(-50%)}}
+@media (max-width:760px){ .logo{padding:0 32px} .l-bd{height:54px} .l-sa{height:18px} .l-sm{height:48px} }
+@media (prefers-reduced-motion:reduce){ .track{animation:none; flex-wrap:wrap; justify-content:center; width:auto} .track [aria-hidden="true"]{display:none} }
+
+/* Sections */
+section.block{padding:120px var(--pad)}
+@media (max-width:760px){ section.block{padding:80px var(--pad)} }
+.h2{font-weight:700; font-size:clamp(36px, 4.2vw, 56px); line-height:1.04; letter-spacing:-.02em}
+
+.industries-head{display:flex; justify-content:space-between; align-items:flex-end; gap:48px; margin-bottom:48px}
+.industries-head .h2{max-width:640px}
+.industries-head p{color:var(--muted); font-size:18px; max-width:440px}
+.industries{display:grid; grid-template-columns:repeat(5, minmax(0,1fr)); gap:16px}
+.ind{background:var(--card); border:1px solid #26262a; border-radius:18px; padding:28px 24px; display:flex; flex-direction:column; gap:12px; min-height:220px}
+.ind h3{font-weight:700; font-size:22px; line-height:1.2}
+.ind p{color:#b8b4ab; font-size:16px}
+@media (max-width:1100px){ .industries{grid-template-columns:repeat(2, minmax(0,1fr))} .industries-head{flex-direction:column; align-items:flex-start; gap:20px} }
+@media (max-width:560px){ .industries{grid-template-columns:1fr} .ind{min-height:0} }
+
+.deliver{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:48px; padding:0 var(--pad) 120px}
+.deliver div{border-top:1px solid var(--line2); padding-top:28px; display:flex; flex-direction:column; gap:12px}
+.deliver h3{font-weight:700; font-size:24px}
+.deliver p{color:#b8b4ab}
+@media (max-width:860px){ .deliver{grid-template-columns:1fr; gap:32px; padding-bottom:80px} }
+
+/* Packages */
+.packages{background:var(--paper); color:var(--ink)}
+.packages a{color:inherit}
+.packages-head{text-align:center; display:flex; flex-direction:column; gap:14px; align-items:center; margin-bottom:48px}
+.packages-head .eyebrow{color:#5e5a52}
+.packages-head p{color:#4a463f; font-size:18px}
+.pk-grid{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:24px}
+.pk{background:#fff; border:1px solid #ddd7ca; border-radius:24px; padding:40px 36px; display:flex; flex-direction:column; gap:22px}
+.pk.pop{background:var(--ink); color:var(--paper); border-color:#3a3a3f}
+.pk-top{display:flex; justify-content:space-between; align-items:center; min-height:32px}
+.pk h3{font-weight:700; font-size:28px}
+.badge{background:var(--red); color:#fff; font-size:13px; font-weight:600; padding:6px 12px; border-radius:999px}
+.price small{display:block; font-size:15px; opacity:.75}
+.price strong{display:block; font-family:var(--display); font-weight:800; font-size:48px; letter-spacing:-.02em; line-height:1.1}
+.pk .vids{font-size:18px; font-weight:600; padding-bottom:20px; border-bottom:1px solid #ddd7ca}
+.pk.pop .vids{border-color:#3a3a3f}
+.pk ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px; flex-grow:1}
+.pk li{display:flex; gap:12px; align-items:flex-start; font-size:16px; line-height:1.45}
+.pk li svg{flex-shrink:0; margin-top:1px}
+.pk .btn{width:100%}
+.pk.pop .btn-red{color:#fff}
+.single{margin-top:24px; display:flex; justify-content:space-between; align-items:center; gap:32px; background:#e8e3d8; border-radius:24px; padding:32px 40px}
+.single h3{font-weight:700; font-size:24px; margin-bottom:6px}
+.single p{color:#4a463f; max-width:760px}
+.single .btn{flex-shrink:0}
+@media (max-width:1000px){ .pk-grid{grid-template-columns:1fr; max-width:520px; margin:0 auto} .single{flex-direction:column; align-items:flex-start} }
+
+/* Process */
+.steps{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:24px; margin-top:56px}
+.step{display:flex; flex-direction:column; gap:12px}
+.step .n{font-family:var(--display); font-weight:800; font-size:64px; line-height:1; color:var(--red)}
+.step h3{font-weight:700; font-size:24px}
+.step p{color:#b8b4ab}
+@media (max-width:960px){ .steps{grid-template-columns:repeat(2, minmax(0,1fr)); gap:40px 24px} }
+@media (max-width:520px){ .steps{grid-template-columns:1fr} }
+
+/* Quote */
+.quote-wrap{padding:0 var(--pad) 120px}
+.quote{background:var(--card); border:1px solid #26262a; border-radius:24px; padding:clamp(32px,5vw,56px) clamp(24px,5vw,64px); display:flex; flex-direction:column; gap:22px}
+.quote p{font-family:var(--display); font-weight:500; font-size:clamp(24px,2.6vw,34px); line-height:1.3}
+.quote span{color:var(--muted2)}
+
+/* Contact */
+.contact{display:grid; grid-template-columns:1fr 1fr; gap:80px; border-top:1px solid var(--line)}
+.contact-info{display:flex; flex-direction:column; gap:26px}
+.contact h2{font-weight:800; font-size:clamp(44px,5vw,72px); line-height:1; letter-spacing:-.03em}
+.contact h2 span{color:var(--red)}
+.contact-info > p{color:var(--muted); font-size:19px; max-width:460px}
+.contact-lines{display:flex; flex-direction:column; gap:12px; font-size:19px}
+.contact-lines a{text-decoration:none}
+.socials{display:flex; gap:20px}
+form{background:var(--card); border:1px solid #26262a; border-radius:24px; padding:clamp(24px,3vw,40px); display:flex; flex-direction:column; gap:18px}
+.row{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+.field{display:flex; flex-direction:column; gap:8px}
+label{font-size:14px; color:var(--muted)}
+input,select,textarea{width:100%; min-height:48px; border-radius:12px; border:1px solid #3a3a3f; background:var(--bg); color:var(--text); padding:12px 14px; font-size:16px; font-family:inherit}
+textarea{resize:vertical; min-height:120px}
+.form-note{font-size:14px; color:var(--muted2)}
+@media (max-width:960px){ .contact{grid-template-columns:1fr; gap:48px} }
+@media (max-width:520px){ .row{grid-template-columns:1fr} }
+
+footer{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; padding:32px var(--pad); padding-bottom:calc(32px + env(safe-area-inset-bottom,0px)); border-top:1px solid var(--line); font-size:15px; color:var(--muted2)}
+footer img{height:32px; width:auto}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" aria-label="Performo Studios, til toppen"><img src="images/performo-logo.png" alt="Performo Studios"></a>
+  <nav class="nav-links" aria-label="Hovedmeny">
+    <a href="#bransjer">Bransjer</a>
+    <a href="#pakker">Pakker</a>
+    <a href="#prosess">Prosess</a>
+    <a href="#kontakt" class="btn btn-red">Book en prat</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="hero-text">
+    <div class="eyebrow">Video for sosiale medier · Oslo</div>
+    <h1>Video som får bedriften din <span>sett.</span></h1>
+    <p>Vi lager TikTok- og Instagram-videoer for bedrifter i Oslo. Fast innhold hver måned, filmet hos dere og klart til publisering.</p>
+    <div class="hero-ctas">
+      <a href="#pakker" class="btn btn-red">Se pakkene</a>
+      <a href="#kontakt" class="btn btn-ghost">Ta kontakt</a>
+    </div>
+  </div>
+
+  <!-- VIDEOER: last opp video1.mp4, video2.mp4 og video3.mp4 til mappa "videos" -->
+  <div class="reels">
+    <div class="reel">
+      <span class="ph">Legg video1.mp4 i videos-mappa</span>
+      <video src="videos/video1.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Eksempelvideo 1"></video>
+    </div>
+    <div class="reel big">
+      <span class="ph">Legg video2.mp4 i videos-mappa</span>
+      <video src="videos/video2.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Eksempelvideo 2"></video>
+    </div>
+    <div class="reel">
+      <span class="ph">Legg video3.mp4 i videos-mappa</span>
+      <video src="videos/video3.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Eksempelvideo 3"></video>
+    </div>
+  </div>
+</section>
+
+<section class="partners" aria-label="Samarbeidspartnere">
+  <div class="eyebrow">Stolt samarbeidspartner for</div>
+  <div class="marquee">
+    <div class="track">
+      <!-- Ny partner? Legg til en linje i HVER av de to gruppene under. -->
+      <div class="logo"><img class="l-bd" src="images/black-diamond.png" alt="Black Diamond"></div>
+      <div class="logo"><img class="l-sa" src="images/spectra-auto.png" alt="Spectra Auto"></div>
+      <div class="logo"><img class="l-sm" src="images/smaragd-motorsport.png" alt="Smaragd Motorsport"></div>
+      <div class="logo" aria-hidden="true"><img class="l-bd" src="images/black-diamond.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-sa" src="images/spectra-auto.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-sm" src="images/smaragd-motorsport.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-bd" src="images/black-diamond.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-sa" src="images/spectra-auto.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-sm" src="images/smaragd-motorsport.png" alt=""></div>
+      <!-- Andre gruppe (kopi av første, gjør løkka sømløs) -->
+      <div class="logo" aria-hidden="true"><img class="l-bd" src="images/black-diamond.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-sa" src="images/spectra-auto.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-sm" src="images/smaragd-motorsport.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-bd" src="images/black-diamond.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-sa" src="images/spectra-auto.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-sm" src="images/smaragd-motorsport.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-bd" src="images/black-diamond.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-sa" src="images/spectra-auto.png" alt=""></div>
+      <div class="logo" aria-hidden="true"><img class="l-sm" src="images/smaragd-motorsport.png" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="bransjer">
+  <div class="industries-head">
+    <h2 class="h2">Startet med bil. Laget for alle som vil selge med video.</h2>
+    <p>Oppskriften som fungerer for bilforhandlere og detailere, fungerer like godt for restauranter, treningssentre og butikker.</p>
+  </div>
+  <div class="industries">
+    <div class="ind"><h3>Bil og detailing</h3><p>Forhandlere, folieringsstudioer og verksteder. Her har vi mest erfaring.</p></div>
+    <div class="ind"><h3>Restaurant og kafé</h3><p>Retter, stemning og folkene bak.</p></div>
+    <div class="ind"><h3>Trening og velvære</h3><p>Treningssentre, PT-er og salonger.</p></div>
+    <div class="ind"><h3>Butikk og merkevarer</h3><p>Produkter vist slik de faktisk ser ut.</p></div>
+    <div class="ind"><h3>Eiendom og bygg</h3><p>Visninger, prosjekter og før og etter.</p></div>
+  </div>
+</section>
+
+<section class="deliver" aria-label="Hva vi leverer">
+  <div><h3>TikTok og Instagram Reels</h3><p>Vertikale videoer laget for algoritmene, med rask klipping, musikk og tekst.</p></div>
+  <div><h3>Profesjonell filming</h3><p>Sony A7 IV og profesjonell fargekorrigering. Vi kommer til dere, dere trenger ikke forberede noe.</p></div>
+  <div><h3>Klart til publisering</h3><p>Ferdige filer rett til dere. Dere poster selv, eller vi gjør det for dere.</p></div>
+</section>
+
+<section class="block packages" id="pakker">
+  <div class="packages-head">
+    <div class="eyebrow">Pakker</div>
+    <h2 class="h2">Velg tempoet som passer dere.</h2>
+    <p>Fast månedlig avtale. Alle priser eks. mva.</p>
+  </div>
+  <div class="pk-grid">
+    <article class="pk">
+      <div class="pk-top"><h3>Start</h3></div>
+      <div class="price"><small>fra</small><strong>kr 6 000</strong><small>per måned</small></div>
+      <div class="vids">4 videoer per måned</div>
+      <ul>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>1 filmedag per måned</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Redigering, musikk og tekst</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Klart til TikTok og Reels</li>
+      </ul>
+      <a href="#kontakt" class="btn btn-dark" data-pakke="Start">Velg Start</a>
+    </article>
+    <article class="pk pop">
+      <div class="pk-top"><h3>Vekst</h3><span class="badge">Mest valgt</span></div>
+      <div class="price"><small>fra</small><strong>kr 10 000</strong><small>per måned</small></div>
+      <div class="vids">8 videoer per måned</div>
+      <ul>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>2 filmedager per måned</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Redigering, musikk og tekst</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Månedlig innholdsplan</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Klart til TikTok og Reels</li>
+      </ul>
+      <a href="#kontakt" class="btn btn-red" data-pakke="Vekst">Velg Vekst</a>
+    </article>
+    <article class="pk">
+      <div class="pk-top"><h3>Premium</h3></div>
+      <div class="price"><small>fra</small><strong>kr 15 000</strong><small>per måned</small></div>
+      <div class="vids">12+ videoer per måned</div>
+      <ul>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Filming etter behov</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Redigering, musikk og tekst</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Månedlig innholdsplan</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Vi poster for dere</li>
+      </ul>
+      <a href="#kontakt" class="btn btn-dark" data-pakke="Premium">Velg Premium</a>
+    </article>
+  </div>
+  <div class="single">
+    <div>
+      <h3>Enkeltprosjekt</h3>
+      <p>Introvideo, lansering eller kampanje. For eksempel en presentasjon av lokalene og produktene deres. Pris etter avtale.</p>
+    </div>
+    <a href="#kontakt" class="btn btn-dark" data-pakke="Enkeltprosjekt">Få et tilbud</a>
+  </div>
+</section>
+
+<section class="block" id="prosess">
+  <h2 class="h2">Enkelt fra start til slutt.</h2>
+  <div class="steps">
+    <div class="step"><div class="n">01</div><h3>Avtale</h3><p>Vi blir enige om stil, innhold og hvor ofte dere får nye videoer.</p></div>
+    <div class="step"><div class="n">02</div><h3>Filming</h3><p>Vi kommer til dere og filmer. Dere trenger ikke forberede noe ekstra.</p></div>
+    <div class="step"><div class="n">03</div><h3>Redigering</h3><p>Vi klipper, fargekorrigerer og legger på musikk og tekst.</p></div>
+    <div class="step"><div class="n">04</div><h3>Levering</h3><p>Ferdig innhold leveres, klart til publisering.</p></div>
+  </div>
+</section>
+
+<!-- KUNDESITAT: bytt ut teksten når du har et ekte sitat, eller slett hele denne seksjonen -->
+<div class="quote-wrap">
+  <figure class="quote" style="margin:0">
+    <p>«[Kort sitat fra en kunde om resultatet av samarbeidet]»</p>
+    <span>[Navn], [Bedrift]</span>
+  </figure>
+</div>
+
+<section class="block contact" id="kontakt">
+  <div class="contact-info">
+    <h2>La oss lage noe <span>sammen.</span></h2>
+    <p>Første samtale er alltid uforpliktende. Fortell oss kort om bedriften, så tar vi det derfra.</p>
+    <div class="contact-lines">
+      <a href="mailto:performostudios@gmail.com">performostudios@gmail.com</a>
+      <a href="tel:+4794830055">948 30 055</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.instagram.com/performostudios/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@performostudios" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+
+  <form id="kontaktskjema" novalidate>
+    <div class="row">
+      <div class="field"><label for="navn">Navn</label><input id="navn" name="navn" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="bedrift">Bedrift</label><input id="bedrift" name="bedrift" type="text" autocomplete="organization"></div>
+    </div>
+    <div class="field"><label for="epost">E-post</label><input id="epost" name="epost" type="email" autocomplete="email" required></div>
+    <div class="field">
+      <label for="pakke">Hvilken pakke er dere interessert i?</label>
+      <select id="pakke" name="pakke">
+        <option>Vet ikke ennå</option><option>Start</option><option>Vekst</option><option>Premium</option><option>Enkeltprosjekt</option>
+      </select>
+    </div>
+    <div class="field"><label for="melding">Melding</label><textarea id="melding" name="melding" rows="4"></textarea></div>
+    <button type="submit" class="btn btn-red">Send forespørsel</button>
+    <p class="form-note" id="form-note">Forespørselen åpnes i e-postprogrammet ditt, klar til å sendes.</p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <img src="images/performo-logo.png" alt="Performo Studios">
+  <span>Oslo · Org.nr. 937 841 671 · © 2026 Performo Studios</span>
+</footer>
+
+<script>
+  // Skjul plassholder når en video faktisk finnes; skjul videoen hvis filen mangler
+  document.querySelectorAll('.reel video').forEach(function (v) {
+    var ph = v.parentElement.querySelector('.ph');
+    v.addEventListener('loadeddata', function () { if (ph) ph.style.display = 'none'; });
+    v.addEventListener('error', function () { v.style.display = 'none'; });
+  });
+
+  // "Velg pakke"-knapper forhåndsvelger pakken i skjemaet
+  document.querySelectorAll('[data-pakke]').forEach(function (a) {
+    a.addEventListener('click', function () { document.getElementById('pakke').value = a.dataset.pakke; });
+  });
+
+  // Skjemaet åpner en ferdig utfylt e-post (fungerer på statiske sider som GitHub Pages)
+  document.getElementById('kontaktskjema').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target, note = document.getElementById('form-note');
+    if (!f.navn.value.trim() || !f.epost.value.trim()) {
+      note.textContent = 'Fyll inn navn og e-post før du sender.';
+      note.style.color = '#ff5a52';
+      return;
+    }
+    var subject = 'Forespørsel fra ' + (f.bedrift.value.trim() || f.navn.value.trim());
+    var body = 'Navn: ' + f.navn.value + '\nBedrift: ' + f.bedrift.value + '\nE-post: ' + f.epost.value +
+               '\nPakke: ' + f.pakke.value + '\n\n' + f.melding.value;
+    window.location.href = 'mailto:performostudios@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
